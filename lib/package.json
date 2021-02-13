@@ -1,0 +1,26 @@
+{
+  "name": "web-scroll",
+  "version": "1.0.0",
+  "description": "Scroll the page with css smooth scroll",
+  "main": "index.js",
+  "module": "index.es6.js",
+  "jsnext:main": "index.es6.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d8corp/web-scroll.git"
+  },
+  "keywords": [
+    "web",
+    "scroll",
+    "page",
+    "native",
+    "front-end"
+  ],
+  "author": "Mikhail Lysikov <d8corp@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d8corp/web-scroll/issues"
+  },
+  "homepage": "https://github.com/d8corp/web-scroll"
+}
