@@ -6,7 +6,6 @@
   "module": "index.es6.js",
   "jsnext:main": "index.es6.js",
   "types": "index.d.ts",
-  "private": true,
   "scripts": {
     "build": "innetjs release",
     "test": "jest",
@@ -33,23 +32,5 @@
   "bugs": {
     "url": "https://github.com/d8corp/web-scroll/issues"
   },
-  "homepage": "https://github.com/d8corp/web-scroll",
-  "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^18.8.1",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
-    "core-js": "^3.8.2",
-    "eslint": "^8.24.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-simple-import-sort": "^8.0.0",
-    "innet-jest": "^1.3.5",
-    "innetjs": "^2.3.2",
-    "typescript": "^4.1.3"
-  }
+  "homepage": "https://github.com/d8corp/web-scroll"
 }

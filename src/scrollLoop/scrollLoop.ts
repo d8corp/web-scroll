@@ -1,9 +1,11 @@
-import {getTop, scrollTo, ScrollOptions, ScrollCallback} from '..'
+import { getTop } from '../getTop'
+import { scrollTo } from '../scrollTo'
+import { ScrollCallback, ScrollOptions } from '../types'
 
-let scrollTimer
+let scrollTimer: any
 
 export function scrollLoop (options: Required<ScrollOptions>, callback?: ScrollCallback, top = getTop()): void {
-  const {attempts, timeout, position, timeInterval} = options
+  const { attempts, timeout, position, timeInterval } = options
 
   if (attempts && timeout) {
     clearTimeout(scrollTimer)
@@ -23,5 +25,3 @@ export function scrollLoop (options: Required<ScrollOptions>, callback?: ScrollC
     }, timeInterval)
   }
 }
-
-export default scrollLoop

@@ -1,2 +1,2 @@
-export {default} from './scroll'
+export { default } from './scroll'
 export * from './scroll'

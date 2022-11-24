@@ -1,10 +1,12 @@
-import {getTop} from '..'
+import { getTop } from '../getTop'
 
-export function scrollTo (position: number | string): void {
+export const defaultScrollOptions: ScrollIntoViewOptions = { block: 'center', behavior: 'smooth' }
+
+export function scrollTo (position: number | string, options: ScrollIntoViewOptions = defaultScrollOptions): void {
   if (typeof position === 'string') {
     const element = document.querySelector(position)
     if (element) {
-      element.scrollIntoView()
+      element.scrollIntoView(options)
     } else {
       scrollTo(0)
     }
@@ -15,5 +17,3 @@ export function scrollTo (position: number | string): void {
     }
   }
 }
-
-export default scrollTo

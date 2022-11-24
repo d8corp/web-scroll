@@ -1,4 +1,6 @@
-import {scrollTo, scrollLoop, ScrollOptions, ScrollCallback} from '..'
+import { scrollLoop } from '../scrollLoop'
+import { scrollTo } from '../scrollTo'
+import { ScrollCallback, ScrollOptions } from '../types'
 
 export function scroll (position: number | string | ScrollOptions, callback?: ScrollCallback): void {
   if (typeof position === 'object') {
@@ -14,7 +16,7 @@ export function scroll (position: number | string | ScrollOptions, callback?: Sc
     scrollLoop(position as any, callback)
     scrollTo(position.position)
   } else if (callback) {
-    scrollLoop({position, timeout: 30, attempts: 1, timeInterval: 100}, callback)
+    scrollLoop({ position, timeout: 30, attempts: 1, timeInterval: 100 }, callback)
     scrollTo(position)
   } else {
     scrollTo(position)
